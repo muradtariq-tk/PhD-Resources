@@ -1,0 +1,11 @@
+SELECT postid,count(userid) as cnt FROM `likes` group by postid ORDER BY count(userid)  DESC
+
+select avg(TX.cnt) from (SELECT postid,count(userid) as cnt FROM `likes` group by postid) as TX
+
+SELECT postid,count(userid) as cnt FROM `comments` group by postid ORDER BY `cnt`  DESC
+
+select avg(TX.cnt) from (SELECT postid,count(userid) as cnt FROM `comments` group by postid) as TX
+
+Select userid from (SELECT userid FROM `likes` union select userid from comments) as T group by userid
+
+SELECT likes.movieid,commonusers.uid FROM likes,commonusers where likes.userid = commonusers.userid

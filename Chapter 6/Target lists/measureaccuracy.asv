@@ -1,0 +1,6 @@
+function ret = measureaccuracy(inp1,inp2)
+[x y] = size(inp1);
+limit = x *0.25;
+tp = x;
+cp = 0;
+if 

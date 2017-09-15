@@ -1,0 +1,3 @@
+function ret = getitemrank(list,ind)
+ls = list{1};
+rl = ls(ind);

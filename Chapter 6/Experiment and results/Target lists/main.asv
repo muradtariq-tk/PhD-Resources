@@ -71,21 +71,4 @@ for samples = 5:5:50
     results{counter,7}=accuracy36;
     results{counter,8}=accuracy46;
     counter = counter +1;
-    am15 = am15 + accuracy15;
-    am25=am25 + accuracy25;
-    am35=am35 + accuracy35;
-    am45=am45 + accuracy45;
-    am16=am16 + accuracy16;
-    am26=am26 + accuracy26;
-    am36=am36 + accuracy36;
-    am46=am46 + accuracy46;
 end
-
-am15=am15/5;
-am25=am25/5;
-am35=am35/5;
-am45=am45/5;
-am16=am16/5;
-am26=am26/5;
-am36=am36/5;
-am46=am46/5;
